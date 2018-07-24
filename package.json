@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter=nyan flickr-fetcher-spec.js",
+    "echo": "echo \"Hello hell\" && exit 1",
+    "start": "node index.js"
   },
   "author": "sadman",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "chai": "^4.1.2",
+    "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
-    "mocha": "^5.2.0"
+    "express-logging": "^1.1.1",
+    "http": "0.0.0",
+    "logops": "^2.1.0",
+    "mocha": "^5.2.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.1.1"
   }
 }
