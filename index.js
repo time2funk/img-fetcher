@@ -65,7 +65,7 @@ app.use( (request, response, next) => {
 	if(request.url == '/login') next();
 	else{
 		request.session.test ='test';
-		if(request.session.pass == '2abh1y235kiu.bvcew32def'){
+		if(request.session.pass == 'test'){
 			next();
 		}else{
 			response.redirect('/login');
