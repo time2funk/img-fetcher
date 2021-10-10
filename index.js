@@ -81,8 +81,8 @@ app.post('/login', (request, response) => {
 	let login = request.body.login;
 	let password = request.body.password;
 
-	if(login == "root" && password == "morehyip"){
-		request.session.pass = '2abh1y235kiu.bvcew32def';
+	if(login == "admin" && password == "admin"){
+		request.session.pass = 'test';
 		response.send({redirect:'/'});
 	}else response.send({error:'wrong login or password'})
 }); 
